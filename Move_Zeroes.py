@@ -1,0 +1,11 @@
+n=int(input())
+arr=list(map(int,input().split()))
+l=[]
+for i in arr:
+    if i!=0:
+        l.append(i)
+for i in arr:
+    if i==0:
+        l.append(i)
+print(*l)
+        
