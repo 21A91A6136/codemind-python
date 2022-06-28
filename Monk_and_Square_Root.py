@@ -1,0 +1,12 @@
+a=int(input())
+while(a):
+    n,m=map(int,input().split())
+    i=0
+    f=-1
+    while(i<=m):
+        if(i*i%m==n):
+            f=i
+            break
+        i+=1
+    print(f)
+    a-=1
