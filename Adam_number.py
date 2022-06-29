@@ -1,18 +1,17 @@
-z=int(input())
-r=0
-rev=0
-n=z
-p=n*n
-while n:
-    m=n%10
-    r=(r*10)+m
+n=int(input())
+s=n*n
+sum1=0
+sum2=0
+while(n>0):
+    w=n%10
+    sum1=sum1*10+w
     n=n//10
-c=r*r
-while c:
-    a=c%10
-    rev=(rev*10)+a
-    c=c//10
-if p==rev:
+s1=sum1*sum1
+while(s1>0):
+    a=s1%10
+    sum2=sum2*10+a
+    s1=s1//10
+if(s==sum2):
     print("True")
 else:
     print("False")
