@@ -1,10 +1,12 @@
-n=int(input())
-m=int(input())
-sum=0
-for i in range(1,n):
-    if n%i==0:
-        sum=sum+i
-if sum==m:
+def sod(a):
+    su=0
+    for i in range(1,a):
+        if a%i==0:
+            su+=i
+    return su
+a=int(input())
+b=int(input())
+if sod(a)==b and sod(b)==a:
     print("Amicable")
 else:
     print("Not Amicable")
