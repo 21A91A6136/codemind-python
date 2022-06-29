@@ -1,15 +1,13 @@
-num=int(input())
-x=0
-while num!=1:
-    if num%2==0:
-        num=num//2
-    elif num%3==0:
-        num=num//3
-    elif num%5==0:
-        num=num//5
+n=int(input())
+while n!=1:
+    if n%5==0:
+        n=n//5
+    elif n%3==0:
+        n=n//3
+    elif n%2==0:
+        n=n//2
     else:
-        print("Not Ugly Number")
-        x=x+1
+        print('Not Ugly Number')
         break
-if(x==0):
-    print("Ugly Number")
+else:
+    print('Ugly Number')
