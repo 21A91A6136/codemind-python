@@ -1,13 +1,15 @@
-def reverseNumber(number):
-        x = 0
-        n = abs(number)
-        rev = 0
-        while(n > 0):
-            a = n % 10
-            rev = rev * 10 + a
-            n = n // 10
-        if(number < 0):
-            return ("-" + str(rev) )
-        return (rev)
-number=int(input())
-print(reverseNumber(number))
+n=int(input())
+rev=0
+t=n
+k=0
+if(n<0):
+    n=n+(n*(-2))
+while(n!=0):
+    d=n%10
+    rev=rev*10+d
+    n=n//10
+if(t<0):
+ k=rev-(rev*2)
+ print(k)
+else:
+    print(rev)
