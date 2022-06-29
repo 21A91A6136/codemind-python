@@ -1,9 +1,12 @@
-n=int(input())
-m=int(input())
-for i in range (n,m+1):
-    c=0
-    for j in range(1,i+1):
-        if(i%j==0):
+a = int(input())
+b = int(input())
+while a<=b:
+    c = 0
+    x = 1
+    while x<=a//2:
+        if a%x==0:
             c+=1
-    if(c==2):
-        print(i)
+        x+=1
+    if c==1:
+        print(a)
+    a+=1
