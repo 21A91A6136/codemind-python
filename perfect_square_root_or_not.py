@@ -1,9 +1,6 @@
-import math
+from math import sqrt
 n=int(input())
-p=math.sqrt(n)
-m=p
-m=int(m)
-if(m==p):
-    print("True")
-else:
-    print("False")
+def solve(n):
+   sq_root = int(sqrt(n))
+   return (sq_root*sq_root) == n
+print (solve(n))
