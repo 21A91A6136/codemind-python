@@ -1,17 +1,18 @@
 n=int(input())
-c=0;s=0;
+sum=0
+res=0
 temp=n
-while n>0:
-    r=n%10
-    n//=10
-    c+=1
-n=temp
-while n>0:
-    r=n%10
-    s=s+pow(r,c)
+while n:
+    d=n%10
+    sum+=1
     n=n//10
-    c-=1
-if s==temp:
-    print("True")
+n=temp
+while n:
+    d=n%10
+    res=res+(d**sum)
+    n=n//10
+    sum-=1
+if(temp==res):
+    print('True')
 else:
-    print("False")
+    print('False')
