@@ -1,15 +1,18 @@
-def prime(i):
+def prime(a):
     c=0
-    d=0
-    for j in range(1,i+1):
-        if i%j==0:
+    if(a==1):
+        return 1
+    for i in range(1,a+1):
+        if(a%i==0):
             c+=1
-    if c!=2:
-        d+=1
-    return d
+    if(c>2):
+        return 1
+    else:
+        return 0
 n=int(input())
-l=[]
+c=0
 for i in range(1,n+1):
-    if n%i==0:
-        l.append(prime(i))
-print(sum(l))
+    if(n%i==0):
+        if(prime(i)):
+            c+=1
+print(c)
