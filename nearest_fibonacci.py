@@ -1,19 +1,17 @@
 n=int(input())
-a,b=0,1
-while(True):
+a=0
+b=1
+while(a<=n):
+    i=a
     c=a+b
-    if(c>n):
-       h1=b
-       h2=c
-       break
     a=b
     b=c
-#print(h1,h2)
-x1=abs(h1-n)
-x2=abs(h2-n)
-if(x1==x2):
-   print(h1,h2)
-elif(x1>x2):
-   print(h2)
+    s=a
+x=abs(n-i)
+y=abs(n-s)
+if(x<y):
+   print(i)
+elif(y==x):
+   print(i,s)
 else:
-   print(h1)
+   print(s)
