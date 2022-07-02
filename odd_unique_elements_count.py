@@ -1,9 +1,7 @@
-n=int(input())
-a=list(map(int,input().split()))
-b=[]
-c=0
-for i in a:
-    if i%2!=0 and i not in b:
-        b+=[i]
-        c+=1
-print(c)
+a=int(input())
+s=list(map(int,input().split()))
+c=[]
+for i in s:
+    if i&1!=0 and i not in c:
+        c.append(i)
+print(len(c))
