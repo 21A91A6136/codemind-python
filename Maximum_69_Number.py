@@ -1,11 +1,11 @@
-n = int(input())
-x = str(n)
-op = [x]
-for i in range(len(x)):
-    if x[i] == "9": 
-        z = x[:i] + "6" + x[1+i:]
-    elif x[i] == "6":
-        z = x[:i] + "9" + x[1+i:]
-    op.append(z)
-op.sort()
-print(op[-1])
+a=int(input())
+s=list(str(a))
+g=0
+for i in range(len(s)):
+    if(s[i]=='6'):
+        s[i]='9'
+        break
+    else:
+        continue
+f=''.join(s)
+print(f)
