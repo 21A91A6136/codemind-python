@@ -1,10 +1,7 @@
-n=int(input())
-a=list(map(int,input().split()))
-b=[]
-sum=0
-for i in a:
-    if i not in b:
-        b.append(i)
-for i in b:
-    sum+=i
-print(sum)
+a=int(input())
+s=list(map(int,input().split()))
+c=[]
+for i in s:
+    if i not in c:
+        c.append(i)
+print(sum(c))
